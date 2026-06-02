@@ -53,8 +53,8 @@ export default function ItemForm({ initial, categories, onSubmit, onCancel }) {
       </div>
 
       <div className="field">
-        <label>Mobile number <span className="opt-label">(optional)</span></label>
-        <input name="mobileNumber" value={form.mobileNumber} onChange={handle} placeholder="+1 415 555 2671" />
+        <label>Mobile number</label>
+        <input name="mobileNumber" value={form.mobileNumber} onChange={handle} required placeholder="+1 415 555 2671" />
         <span className="hint">Include country code, e.g. +20 for Egypt</span>
       </div>
 

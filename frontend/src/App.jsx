@@ -35,13 +35,6 @@ export default function App() {
   return (
     <div className="app">
       <nav className="topnav">
-        <div className="topnav-brand">
-          <div className="brand-dot">IM</div>
-          <div>
-            <div className="topnav h1">Item Manager</div>
-            <div className="topnav-sub">MERN Stack Application</div>
-          </div>
-        </div>
         <button className="btn btn-ghost btn-sm" onClick={() => setShowCategories(v => !v)}>
           {showCategories ? 'Hide categories' : 'Manage categories'}
         </button>

@@ -21,6 +21,9 @@ router.post('/', async (req, res, next) => {
     if (!description || !description.trim()) {
       return res.status(400).json({ error: 'Description is required' });
     }
+    if (!mobileNumber || !mobileNumber.trim()) {
+      return res.status(400).json({ error: 'Mobile number is required' });
+    }
 
     let mobileDetails = null;
 
