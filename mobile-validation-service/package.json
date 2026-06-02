@@ -1,0 +1,22 @@
+{
+  "name": "mobile-validation-service",
+  "version": "1.0.0",
+  "description": "Microservice for validating mobile phone numbers",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest --testPathPattern=tests/ --forceExit"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "libphonenumber-js": "^1.10.51"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.4"
+  }
+}
